@@ -4,28 +4,27 @@
   <meta charset="utf-8">
   <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
   <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="DESCRIPTION META TAG">
-  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
-  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
-  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <meta name="description" content="DiffVax is a scalable, lightweight, and fast framework for image and video immunization, preventing diffusion-based editing with imperceptible noise and achieving unprecedented speed and robustness.">
+  <meta property="og:title" content="DiffVax: Optimization-Free Image Immunization Against Diffusion-Based Editing"/>
+  <meta property="og:description" content="DiffVax is a scalable, lightweight, and fast framework for image and video immunization, preventing diffusion-based editing with imperceptible noise and achieving unprecedented speed and robustness."/>
+  <meta property="og:url" content="https://diffvax.github.io/"/>
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
   <meta property="og:image" content="static/image/your_banner_image.png" />
   <meta property="og:image:width" content="1200"/>
   <meta property="og:image:height" content="630"/>
 
 
-  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
-  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <meta name="twitter:title" content="DiffVax: Optimization-Free Image Immunization Against Diffusion-Based Editing">
+  <meta name="twitter:description" content="DiffVax is a scalable, lightweight, and fast framework for image and video immunization, preventing diffusion-based editing with imperceptible noise and achieving unprecedented speed and robustness.">
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
   <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
   <meta name="twitter:card" content="summary_large_image">
   <!-- Keywords for your paper to be indexed by-->
-  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="keywords" content="Malicious Editing, Immunization, Defense Against Editing">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Academic Project Page</title>
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <title>DiffVax: Optimization-Free Image Immunization Against Diffusion-Based Editing</title>
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
 
@@ -37,11 +36,24 @@
   href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="static/css/index.css">
 
+  <link rel="stylesheet" href="static/css/glide.core.min.css">
+  <link rel="stylesheet" href="static/css/glide.theme.min.css">
+  <link rel="stylesheet" href="static/css/glide-custom.css">
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
   <script defer src="static/js/fontawesome.all.min.js"></script>
   <script src="static/js/bulma-carousel.min.js"></script>
   <script src="static/js/bulma-slider.min.js"></script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+	    tex2jax: {
+	        inlineMath: [['$','$'], ['\\(','\\)']],
+	        processEscapes: true
+	    }
+	});
+    </script>
   <script src="static/js/index.js"></script>
 </head>
 <body>
@@ -52,68 +64,60 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
+            <h1 class="xtitle is-1 publication-title" style="    font-size: 200%; font-weight: 800;">DiffVax: Optimization-Free Image Immunization Against Diffusion-Based Editing</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
-              <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
-                <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
-                  <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
-                  </span>
-                  </div>
+              <span class="author-block"><a href="https://karaozgur.com/" target="_blank">Tarik Can Ozden</a><sup>1*</sup></span>
+              <span class="author-block"><a href="https://karaozgur.com/" target="_blank">Ozgur Kara</a><sup>2*</sup></span>
+              <span class="author-block"><a href="https://oguzhanakcin.github.io/" target="_blank">Oguzhan Akcin</a><sup>3</sup></span>
+              <span class="author-block"><a href="https://keremzaman.com/" target="_blank">Kerem Zaman</a><sup>4</sup></span>
+              <span class="author-block"><a href="https://sites.google.com/view/shashanks" target="_blank">Shashank Srivastava</a><sup>4</sup></span>
+              <span class="author-block"><a href="https://scholar.google.com/citations?user=262ASa4AAAAJ&hl=en" target="_blank">Sandeep P. Chinchali</a><sup>3</sup></span>
+              <span class="author-block"><a href="https://scholar.google.com/citations?hl=en&user=8kA3eDwAAAAJ" target="_blank">James M. Rehg</a><sup>2</sup></span>
+            </div>
 
-                  <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
-                  </div>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup>Bogazici University</span>
+              <span class="author-block"><sup>2</sup>University of Illinois at Urbana-Champaign</span>
+              <span class="author-block"><sup>3</sup>The University of Texas at Austin</span>
+              <span class="author-block"><sup>4</sup>University of North Carolina at Chapel Hill</span>
+              <span class="eql-cntrb"><small><br> <sup>*</sup>Joint co-author</small></span>
+            </div>
 
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                         <!-- Arxiv PDF link -->
-                      <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
-                    </span>
-
-                    <!-- Supplementary PDF link -->
-                    <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span>
-
-                  <!-- Github link -->
-                  <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code</span>
-                  </a>
-                </span>
-
-                <!-- ArXiv abstract Link -->
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                    <!-- Arxiv PDF link -->
                 <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  <a href="static/pdfs/DiffVax.pdf" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
-                    <i class="ai ai-arxiv"></i>
+                    <i class="fas fa-file-pdf"></i>
                   </span>
-                  <span>arXiv</span>
+                  <span>Paper</span>
                 </a>
               </span>
+
+              <!-- Supplementary PDF link -->
+              <span class="link-block">
+                <a href="supp/supp.html" target="_blank"
+                class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                  <i class="fas fa-file-pdf"></i>
+                </span>
+                <span>Supplementary</span>
+              </a>
+            </span>
+
+            <!-- Github link -->
+            <span class="link-block">
+              <a href="https://github.com/tarikcanozden/GenAI-Adv-Attack" target="_blank"
+              class="external-link button is-normal is-rounded is-dark">
+              <span class="icon">
+                <i class="fab fa-github"></i>
+              </span>
+              <span>Code</span>
+            </a>
+          </span>
             </div>
           </div>
         </div>
@@ -123,32 +127,28 @@
 </section>
 
 
-<!-- Teaser video-->
+<!-- Teaser Figure-->
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
-        type="video/mp4">
-      </video>
+      <img src="static/images/teaser.png" alt="Immunization Examples"/>
       <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+        DiffVax is an optimization-free image immunization approach designed to protect images and videos from diffusion-based editing. DiffVax demonstrates robustness across diverse content, providing protection for both in-the-wild (a) unseen images and (b) unseen video content while effectively preventing edits across various editing methods, including inpainting (illustrated with a human in the left column and a non-human foreground object in the right column) and instruction-based edits (right column).
       </h2>
     </div>
   </div>
 </section>
-<!-- End teaser video -->
+<!-- End teaser Figure -->
 
 <!-- Paper abstract -->
 <section class="section hero is-light">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
+      <div class="column is-four-fifths" style="width: 100%;">
+        <h2 class="title is-3 hr-lines">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            Current image immunization defense techniques against diffusion-based editing embed imperceptible noise in target images to disrupt editing models. However, these methods face scalability challenges, as they require time-consuming re-optimization for each image—taking hours for small batches. To address these challenges, we introduce DiffVax, a scalable, lightweight, and optimization-free framework for image immunization, specifically designed to prevent diffusion-based editing. Our approach enables effective generalization to unseen content, reducing computational costs and cutting immunization time from days to milliseconds—achieving a 250,000$\times$ speedup. This is achieved through a loss term that ensures the failure of editing attempts and the imperceptibility of the perturbations. Extensive qualitative and quantitative results demonstrate that our model is scalable, optimization-free, adaptable to various diffusion-based editing tools, robust against counter-attacks, and, for the first time, effectively protects video content from editing. Our code and qualitative results are provided in the supplementary.
           </p>
         </div>
       </div>
@@ -158,130 +158,160 @@
 <!-- End paper abstract -->
 
 
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
-
-
-
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End youtube video -->
-
-
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End video carousel -->
-
-
-
-
-
-
 <!-- Paper poster -->
-<section class="hero is-small is-light">
+<section class="hero is-small">
   <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-">
+          <h2 class="title is-3 hr-lines">Method</h2>
+          <div class="content has-text-justified">
         
+      <table width="800" border="0">
+        <tbody>
+          <tr>
+            <td colspan="3">
+              <p>
+                Our process begins with the immunizer model $f(\cdot;\theta)$ which generates imperceptible noise $\epsilon_{im}$ to be applied to original image $I$. This noise is applied to the masked region $M$ of the image, resulting in immunized image $I_{im}$. The immunized image is then processed by a diffusion-based editing model $SD(\cdot)$ using a text prompt $P$ and the complementary mask $\sim M$ to edit the background of the original image. The training aims to minimize two loss terms $\mathcal{L}_{noise}$ and $\mathcal{L}_{edit}$, which penalizes the applied noise magnitude, and if the edit is successful, respectively. During training, the immunizer learns to generalize across diverse images, ensuring editing attempts fail while preserving visual fidelity. This end-to-end framework enables robust, scalable immunization against diffusion-based editing for both images and videos.</p>
+            </td>
+          </tr>
+            <img src="static/images/immunuzation.png" alt="model_overview"/>
+        </tbody>
+      </table>
       </div>
-    </div>
-  </section>
+      </div>
+</section>
 <!--End paper poster -->
 
 
-<!--BibTex citation -->
-  <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
+<!-- Main Videos-->
+<section class="hero is-light">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-">
+          <h2 class="title is-3 hr-lines">DiffVax Immunization Results</h2>
+          <div style="display: flex;margin-top: 1rem;">
+            <div class="column">
+              <p class="prompt-input">Prompt</p>
+            </div>
+            <div class="column">
+              <p class="prompt">Original Image</p>
+            </div>
+            <div class="column">
+              <p class="prompt">Edited Image</p>
+            </div>
+            <div class="column">
+              <p class="prompt">Edited Immunized Image</p>
+            </div>
+          </div>
+          <div style="display: flex;">
+            <div class="column">
+              <p class="prompt">"Person in a prison"</p>
+            </div>
+            <div class="column">
+                <img src="static/images/prison/original.png" alt="model_overview"/>
+            </div>
+            <div class="column">
+                <img src="static/images/prison/edited.png" alt="model_overview"/>
+            </div>
+            <div class="column">
+                <img src="static/images/prison/immunized_edited.png" alt="model_overview"/>
+            </div>
+          </div>
+          <div style="display: flex;">
+            <div class="column">
+              <p class="prompt">"Geoffrey Hinton at a political protest"</p>
+            </div>
+            <div class="column">
+                <img src="static/images/hinton/original.png" alt="model_overview"/>
+            </div>
+            <div class="column">
+                <img src="static/images/hinton/edited.png" alt="model_overview"/>
+            </div>
+            <div class="column">
+                <img src="static/images/hinton/immunized_edited.png" alt="model_overview"/>
+            </div>
+          </div>
+          <div style="display: flex;">
+            <div class="column">
+              <p class="prompt">"An eagle sitting on a table in a library"</p>
+            </div>
+            <div class="column">
+                <img src="static/images/bird/original.png" alt="model_overview"/>
+            </div>
+            <div class="column">
+                <img src="static/images/bird/edited.png" alt="model_overview"/>
+            </div>
+            <div class="column">
+                <img src="static/images/bird/immunized_edited.png" alt="model_overview"/>
+            </div>
+          </div>
+          <div style="display: flex;">
+            <div class="column">
+              <p class="prompt">"add sunglasses"</p>
+            </div>
+            <div class="column">
+                <img src="static/images/instructpix2pix/original.png" alt="model_overview"/>
+            </div>
+            <div class="column">
+                <img src="static/images/instructpix2pix/edited.png" alt="model_overview"/>
+            </div>
+            <div class="column">
+                <img src="static/images/instructpix2pix/immunized_edited.png" alt="model_overview"/>
+            </div>
+          </div>
+<!--  -->
+          <div style="display: flex;margin-top: 1rem;">
+            <div class="column">
+              <p class="prompt-input">Prompt</p>
+            </div>
+            <div class="column">
+              <p class="prompt">Original Video</p>
+            </div>
+            <div class="column">
+              <p class="prompt"> Edited Video </p>
+            </div>
+            <div class="column">
+              <p class="prompt"> Immunized Edited Video </p>
+            </div>
+          </div>
+          <div style="display: flex;">
+            <div class="column">
+              <p class="prompt">"in snow"</p>
+            </div>
+            <div class="column">
+              <video preload="auto" poster="" autoplay controls muted loop width="90%">
+                <!-- Your video preload="auto"file here -->
+                <source src="static/videos/snowstorm/edited_original.mp4"
+                type="video/mp4">
+              </video>  
+            </div>
+            <div class="column">
+              <video preload="auto"poster="" id="video11" autoplay controls muted loop width="90%">
+                <!-- Your video preload="auto"file here -->
+                <source src="static/videos/snowstorm/edited_original.mp4"
+                type="video/mp4">
+              </video>  
+            </div>
+            <div class="column">
+              <video preload="auto"poster="" id="video11" autoplay controls muted loop width="90%">
+                <!-- Your video preload="auto"file here -->
+                <source src="static/videos/snowstorm/edited_immunized.mp4"
+                type="video/mp4">
+              </video>  
+            </div>
+          </div>
+<!--  -->
+        </div>
+      </div>
     </div>
+  </div>
 </section>
-<!--End BibTex citation -->
+
+<!-- Main Videos-->
+
+
 
 
   <footer class="footer">
