@@ -27,6 +27,22 @@ body {
   font-family: 'Google Sans', sans-serif;
 }
 
+.column {
+  display: flex;
+  justify-content: center;
+  flex-direction: column; /* Optional for stacking child elements vertically */
+}
+
+.caption {
+  display: flex;
+  justify-content: center;
+  flex-direction: caption; /* Optional for stacking child elements vertically */
+}
+
+.prompt {
+  text-align: center; /* Ensures the text aligns properly */
+}
+
 
 .publication-title {
 }
@@ -132,6 +148,3 @@ body {
 .eql-cntrb { 
   font-size: smaller;
 }
-
-
-

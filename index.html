@@ -77,8 +77,8 @@
             </div>
 
             <div class="is-size-5 publication-authors">
-              <span class="author-block"><sup>1</sup>University of Illinois at Urbana-Champaign</span>
-              <span class="author-block"><sup>2</sup>University of Texas at Austin</span>
+              <span class="author-block"><sup>1</sup>University of Illinois Urbana-Champaign</span>
+              <span class="author-block"><sup>2</sup>The University of Texas at Austin</span>
               <span class="author-block"><sup>3</sup>Bogazici University</span>
               <span class="author-block"><sup>4</sup>University of North Carolina at Chapel Hill</span>
               <span class="eql-cntrb"><small><br> <sup>*</sup>Equal contribution</small></span>
@@ -89,34 +89,23 @@
               <div class="publication-links">
                     <!-- Arxiv PDF link -->
                 <span class="link-block">
-                  <a href="static/pdfs/DiffVax.pdf" target="_blank"
+                  <a href="https://arxiv.org/abs/2411.17957" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
-                    <i class="fas fa-file-pdf"></i>
+                    <i class="ai ai-arxiv"></i>
                   </span>
-                  <span>Paper</span>
+                  <span>arXiv</span>
                 </a>
               </span>
 
-              <!-- Supplementary PDF link -->
-              <span class="link-block">
-                <a href="supp/supp.html" target="_blank"
-                class="external-link button is-normal is-rounded is-dark">
-                <span class="icon">
-                  <i class="fas fa-file-pdf"></i>
-                </span>
-                <span>Supplementary</span>
-              </a>
-            </span>
-
             <!-- Github link -->
             <span class="link-block">
-              <a href="https://github.com/tarikcanozden/GenAI-Adv-Attack" target="_blank"
+              <a href="https://DiffVax.github.io" target="_blank"
               class="external-link button is-normal is-rounded is-dark">
               <span class="icon">
                 <i class="fab fa-github"></i>
               </span>
-              <span>Code</span>
+              <span>Code (Soon)</span>
             </a>
           </span>
             </div>
@@ -279,15 +268,22 @@
           </div>
           <div style="display: flex;">
             <div class="column">
-              <p class="prompt">"in snow"</p>
+              <p class="prompt">"in snowstorm"</p>
             </div>
+            <!--
             <div class="column">
-              <video preload="auto" poster="" autoplay controls muted loop width="90%">
-                <!-- Your video preload="auto"file here -->
-                <source src="static/videos/snowstorm/edited_original.mp4"
-                type="video/mp4">
-              </video>  
-            </div>
+              <div class="video-wrapper" style="width: 100%;">
+                <video preload="auto"class="hover-video" src="static/videos/snowstorm/edited_original.mp4" preload="metadata" autoplay loop muted> </video>
+                <video preload="auto"class="default-video" src="static/videos/snowstorm/edited_immunized.mp4" preload="metadata" autoplay controls loop muted></video>
+              </div>
+            </div>-->
+              <div class="column">
+                <video preload="auto"poster="" id="video11" autoplay controls muted loop width="90%">
+                  <!-- Your video preload="auto"file here -->
+                  <source src="static/videos/snowstorm/edited_original.mp4"
+                  type="video/mp4">
+                </video>  
+              </div>
             <div class="column">
               <video preload="auto"poster="" id="video11" autoplay controls muted loop width="90%">
                 <!-- Your video preload="auto"file here -->
@@ -324,13 +320,13 @@
               <!-- Add remaining captions here  -->
             </div>
           <div class="caption" style="display: flex;font-size:12.5px">
-            <div class="column"><p>Prompt</p></div>
-            <div class="column"><p>Original Image</p> </div> 
-            <div class="column"><p>Edited Image</p> </div> 
-            <div class="column"><p>Random Noise Edited Image</p> </div> 
-            <div class="column"> <p>PhotoGuard-E (<a style="color: blue;" href="#ref-photoguard">[1]</a>)</p></div> 
-            <div class="column"> <p>PhotoGuard-D (<a style="color: blue;" href="#ref-photoguard">[1]</a>)</p></div> 
-            <div class="column"><p>DiffVax (Ours)</p> </div> 
+            <div class="column"><p class="prompt">Prompt</p></div>
+            <div class="column"><p class="prompt">Original Image</p> </div> 
+            <div class="column"><p class="prompt">Edited Image</p> </div> 
+            <div class="column"><p class="prompt">Random Noise <br>Edited Image</p> </div> 
+            <div class="column"> <p class="prompt">PhotoGuard-E (<a style="color: blue;" href="#ref-photoguard">[1]</a>)</p></div> 
+            <div class="column"> <p class="prompt">PhotoGuard-D (<a style="color: blue;" href="#ref-photoguard">[1]</a>)</p></div> 
+            <div class="column"><p class="prompt">DiffVax (Ours)</p> </div> 
           </div>
            <!-- Add caption element for each video preload="auto"-->
           <div class="caption" style="display: flex;font-size:12.5px">
